@@ -1,4 +1,4 @@
-# RESILIADATA - Uma Jornada Tecnológica Extraordinária 🚀
+# RESILIADATA -  🚀
 
 Bem-vindo ao ResiliaData! O seu sistema de banco de dados que vai além, impulsionando empresas e transformando dados em oportunidades. Prepare-se para uma experiência única e inovadora!
 
