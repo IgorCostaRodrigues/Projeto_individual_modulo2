@@ -99,12 +99,12 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas ou env
 
 **Autores:**
 
-Este projeto foi desenvolvido por [Seu Nome] e está licenciado sob [licença].
+Este projeto foi desenvolvido por Igor e está licenciado sob eu mesmo.
 
 ---
 
 **Licença:**
 
-Este projeto está licenciado sob a [inserir tipo de licença].
+Este projeto está licenciado sob a eu mesmo.
 
 ---
