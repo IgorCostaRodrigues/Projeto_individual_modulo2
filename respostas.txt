@@ -1,0 +1,66 @@
+Respostas:
+
+1. Entidades necessárias:
+   - Empresa_Parceira
+   - Tecnologia
+   - Área_Tecnológica
+   - Tecnologia_Utilizada
+   - Colaborador
+
+2. Principais campos e tipos:
+   - Empresa_Parceira:
+     - ID (int, chave primária)
+     - CNPJ (char(14))
+     - Nome (varchar(100))
+     - Endereço (varchar(100))
+     - Telefone (varchar(20))
+     - Email (varchar(50))
+
+   - Tecnologia:
+     - ID (int, chave primária)
+     - Nome (varchar(100))
+     - Descrição (text)
+     - Área_Tecnológica_ID (int, chave estrangeira referenciando Área_Tecnológica.ID)
+
+   - Área_Tecnológica:
+     - ID (int, chave primária)
+     - Nome (varchar(100))
+
+   - Tecnologia_Utilizada:
+     - ID (int, chave primária)
+     - Empresa_ID (int, chave estrangeira referenciando Empresa_Parceira.ID)
+     - Tecnologia_ID (int, chave estrangeira referenciando Tecnologia.ID)
+
+   - Colaborador:
+     - CPF (char(11), chave primária)
+     - Nome (varchar(100))
+     - Telefone (varchar(20))
+     - Email (varchar(50))
+     - Cargo (varchar(20))
+     - Empresa_ID (int, chave estrangeira referenciando Empresa_Parceira.ID)
+
+3. Relacionamentos (com relações cardinais):
+   - Empresa_Parceira tem uma relação de 1 para N com Tecnologia_Utilizada através de Empresa_ID (uma empresa pode utilizar várias tecnologias)
+   - Tecnologia tem uma relação de 1 para N com Tecnologia_Utilizada através de Tecnologia_ID (uma tecnologia pode ser utilizada por várias empresas)
+   - Área_Tecnológica não tem relacionamentos diretos com outras tabelas, mas é referenciada por Tecnologia através de Área_Tecnológica_ID
+   - Colaborador tem uma relação de N para 1 com Empresa_Parceira através de Empresa_ID (uma empresa pode ter vários colaboradores)
+
+4. Simulação de registros:
+   - Empresa_Parceira:
+     1. ID: 1, CNPJ: "12345678901234", Nome: "Empresa A", Endereço: "Rua A, 123", Telefone: "1234567890", Email: "empresaA@example.com"
+     2. ID: 2, CNPJ: "98765432109876", Nome: "Empresa B", Endereço: "Rua B, 456", Telefone: "0987654321", Email: "empresaB@example.com"
+
+   - Tecnologia:
+     1. ID: 1, Nome: "Python", Descrição: "Linguagem de programação de alto nível", Área_Tecnológica_ID: 1
+     2. ID: 2, Nome: "React", Descrição: "Biblioteca JavaScript para criar interfaces de usuário", Área_Tecnológica_ID: 1
+
+   - Área_Tecnológica:
+     1. ID: 1, Nome: "Desenvolvimento Web"
+
+   - Tecnologia_Utilizada:
+     1. ID: 1, Empresa_ID: 1, Tecnologia_ID: 1
+     2. ID: 2, Empresa_ID: 2, Tecnologia_ID: 2
+
+   - Colaborador:
+     1. CPF: "12345678900", Nome: "João Silva", Telefone: "1122334455", Email: "joao.silva@resilia.com", Cargo: "Desenvolvedor", Empresa_ID: 1
+     2. CPF: "98765432100", Nome: "Maria Santos", Telefone: "5544332211", Email: "maria.santos@resilia.com", Cargo: "Designer", Empresa_ID: 2
