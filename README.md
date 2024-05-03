@@ -10,7 +10,7 @@ O ResiliaData é o seu companheiro confiável para avaliar tecnologias e gerenci
 
 ### Empresa_Parceira:
 
-- **ID** (int)
+- **ID** (int)[pk]
 - **CNPJ** (char(14))
 - **Nome** (varchar(100))
 - **Endereço** (varchar(100))
@@ -19,19 +19,19 @@ O ResiliaData é o seu companheiro confiável para avaliar tecnologias e gerenci
 
 ### Tecnologia:
 
-- **ID** (int)
+- **ID** (int)[pk]
 - **Nome** (varchar(100))
 - **Descrição** (text)
 - **Área_Tecnológica_ID** (int)
 
 ### Área_Tecnológica:
 
-- **ID** (int)
+- **ID** (int)[pk]
 - **Nome** (varchar(100))
 
 ### Tecnologia_Utilizada:
 
-- **ID** (int)
+- **ID** (int)[pk]
 - **Empresa_ID** (int)
 - **Tecnologia_ID** (int)
 
