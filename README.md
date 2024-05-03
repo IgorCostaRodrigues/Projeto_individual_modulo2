@@ -76,8 +76,8 @@ O ResiliaData é um sistema de banco de dados desenvolvido para auxiliar na aval
   - ID: 2, Empresa_ID: 2, Tecnologia_ID: 2
 
 - **Colaborador:**
-  - CPF: "12345678900", Nome: "João Silva", Telefone: "1122334455", Email: "joao.silva@example.com", Cargo: "Desenvolvedor", Empresa_ID: 1
-  - CPF: "98765432100", Nome: "Maria Santos", Telefone: "5544332211", Email: "maria.santos@example.com", Cargo: "Designer", Empresa_ID: 2
+  - CPF: "12345678900", Nome: "João Silva", Telefone: "1122334455", Email: "joao.silva@resilia.com", Cargo: "Desenvolvedor", Empresa_ID: 1
+  - CPF: "98765432100", Nome: "Maria Santos", Telefone: "5544332211", Email: "maria.santos@resilia.com", Cargo: "Designer", Empresa_ID: 2
 
 ---
 
