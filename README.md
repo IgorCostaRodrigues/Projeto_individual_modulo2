@@ -104,6 +104,5 @@ Desenvolvido com amor por Igor e licenciado sob "Eu Mesmo" 😄.
 
 Este projeto está licenciado sob "Eu Mesmo". Liberte sua criatividade e inovação!
 
-![ResiliaData](https://media.giphy.com/media/3o7TKz50fNZSL6KEL2/giphy.gif)
 
 Aproveite a jornada tecnológica com o ResiliaData! 🌟
